@@ -47,10 +47,10 @@ public class ConfirmSignupActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    GmailSender sender = new GmailSender("bracustmanagement@gmail.com", "[Your password will be here]");
+                    GmailSender sender = new GmailSender("[your email will be here]", "[Your password will be here]");
                     sender.sendMail(subject,
                             mail,
-                            "bracustmanagement@gmail.com",
+                            "[your email will be here]",
                             receiver);
                     dialog.dismiss();
                 } catch (Exception e) {
