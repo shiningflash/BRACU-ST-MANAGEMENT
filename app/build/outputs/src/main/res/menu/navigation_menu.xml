@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/my_profile"
+        android:title="My profile"
+        android:icon="@drawable/profile_icon"/>
+
+    <item
+        android:id="@+id/change_pass"
+        android:title="Change Password"
+        android:icon="@drawable/lock_icon"
+        />
+
+    <item
+        android:id="@+id/student_list"
+        android:title="Show Student List"
+        android:icon="@drawable/personlist_icon"/>
+
+    <item
+        android:id="@+id/apply_st"
+        android:title="Apply for Student Tutor"
+        android:icon="@drawable/apply"/>
+
+    <item
+        android:id="@+id/applicant_list"
+        android:title="Show applicant list"
+        android:icon="@drawable/list_icon"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout_icon"/>
+</menu>

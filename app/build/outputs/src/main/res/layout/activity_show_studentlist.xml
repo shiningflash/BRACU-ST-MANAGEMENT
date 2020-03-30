@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Student_ListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF9800">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            tools:src="@tools:sample/avatars"
+            tools:srcCompat="?attr/homeAsUpIndicator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student List"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="logout"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="#F44336"
+            android:layout_marginLeft="90dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </ScrollView>
+
+</RelativeLayout>

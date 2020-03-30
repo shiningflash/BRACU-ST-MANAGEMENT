@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="2dp"
+    android:background="@drawable/gradient_style"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/applicant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMIRUL ISLAM AL MAMUN"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#18225E" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/credit_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit completed 70"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cgpa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CGPA 3.78"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/running_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Running course 4"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/total_class_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total class hour 24"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/cse110_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE110: A"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cse111_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE111: A"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cse220_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE220: A"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/cse221_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE221: A"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cse230_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE230: A"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cse260_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE260: A"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/cse250_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE250: A"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/cse251_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE251: A"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/st_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ST Experience: Yes, CSE230"
+                android:textSize="14sp"
+                android:layout_marginTop="128dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/other_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Experience: NA"
+                android:textSize="14sp"
+                android:layout_marginTop="145dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/scholarship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scholarship: 100% BRAC Scholarship"
+                android:textSize="14sp"
+                android:layout_marginTop="162dp"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

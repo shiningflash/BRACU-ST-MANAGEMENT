@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/deepBlue</item>
+        <!-- <item name="colorAccent">@color/white</item> -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarLayout" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+
+    <style name="AppTheme.popupoverlay" parent="Theme.AppCompat.Light"></style>
+
+    <style name="MyEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#020000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="MyEditTextStyle1" parent="android:Widget.EditText">
+        <item name="android:layout_width">195dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#020000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="TableHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#03A9F4</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TableHeader1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#2196F3</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TableValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#E8E9F0</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TableValue1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

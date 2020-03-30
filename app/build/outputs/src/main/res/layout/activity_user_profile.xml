@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/my_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/secondary_header">
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="23sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/antic"
+            android:layout_gravity="center"
+            android:textColor="#E1E4C2"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:background="#00BCD4">
+                <TextView
+                    android:id="@+id/student_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/antic"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:background="#00BCD4">
+                <TextView
+                    android:id="@+id/department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/antic"
+                    android:textSize="16sp"
+                    android:textColor="#050000"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:background="#00BCD4">
+                <TextView
+                    android:id="@+id/phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/antic"
+
+                    android:textSize="19sp"
+                    android:textColor="#050000"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/edit_profile_button"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="7dp"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/login_button"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/consultation_button"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="7dp"
+            android:text="Consultation"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/register_button"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/edit_consultation_button"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="7dp"
+            android:text="Edit Consultation"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:background="@color/register_button"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/consultation_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginHorizontal="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="18dp"
+                android:background="#0080FF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- consultation"
+                android:fontFamily="@font/antic"
+                android:layout_margin="10dp"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="* tap to get more details about available status *"/>
+
+        <TableRow android:layout_width="match_parent">
+
+            <TextView
+                style="@style/TableHeader1"
+                android:layout_weight="2"
+                android:background="#3F51B5"
+                android:text="Time/Day" />
+
+            <TextView
+                style="@style/TableHeader1"
+                android:text="sat" />
+
+            <TextView
+                style="@style/TableHeader1"
+                android:text="sun" />
+
+            <TextView
+                style="@style/TableHeader1"
+                android:text="mon" />
+
+            <TextView
+                style="@style/TableHeader1"
+                android:text="tue" />
+
+            <TextView
+                style="@style/TableHeader1"
+                android:text="wed" />
+
+            <TextView
+                style="@style/TableHeader1"
+                android:text="thu" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="08:00 - 09:20"
+                android:layout_weight="2"
+                style="@style/TableHeader" />
+
+            <TextView
+                android:id="@+id/a8"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1" />
+
+            <TextView
+                android:id="@+id/b8"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/c8"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/d8"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/e8"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/f8"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="09:30 - 11:00"
+                android:layout_weight="2"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:id="@+id/a9"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/b9"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/c9"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/d9"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/e9"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/f9"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="11:00 - 12:20"
+                android:layout_weight="2"
+                style="@style/TableHeader"/>
+
+            <TextView
+                android:id="@+id/a11"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/b11"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/c11"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/d11"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/e11"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/f11"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="12:30 - 02:00"
+                android:layout_weight="2"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:id="@+id/a12"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/b12"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/c12"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/d12"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/e12"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/f12"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="02:00 - 03:20"
+                android:layout_weight="2"
+                style="@style/TableHeader"/>
+
+            <TextView
+                android:id="@+id/a2"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/b2"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/c2"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/d2"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/e2"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:id="@+id/f2"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="03:30 - 05:00"
+                android:layout_weight="2"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:id="@+id/a3"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/b3"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/c3"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/d3"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/e3"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+
+            <TextView
+                android:id="@+id/f3"
+                android:text=""
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/TableValue"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

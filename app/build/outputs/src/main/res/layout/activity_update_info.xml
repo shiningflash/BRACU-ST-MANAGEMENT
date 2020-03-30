@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".UpdateInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00000000">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="60dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bracu_logo"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/bangers"
+            android:gravity="left"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="25dp"
+            android:padding="8dp"
+            android:text="HELLO THERE!"
+            android:textColor="#413434"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <Button
+            android:id="@+id/appLebel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update your info"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/antic"
+            android:textColor="#240202"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:gravity="start|center"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Name    :"/>
+            <EditText
+                android:id="@+id/full_name"
+                style="@style/MyEditTextStyle"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"
+                android:hint="Enter full name*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ID           :"/>
+            <EditText
+                android:id="@+id/student_id"
+                style="@style/MyEditTextStyle"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"
+                android:hint="Enter Student Id." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Contact :"/>
+            <EditText
+                android:id="@+id/contact_no"
+                style="@style/MyEditTextStyle"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"
+                android:hint="Enter Contact no." />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Depart.  :"/>
+                <EditText
+                    android:id="@+id/department"
+                    style="@style/MyEditTextStyle"
+                    android:inputType="text"
+                    android:fontFamily="@font/antic"
+                    android:textStyle="bold"
+                    android:hint="Enter Department" />
+            </LinearLayout>
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:text="CONFIRM"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fontFamily="@font/antic"
+            android:background="@color/register_button"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="BACK TO PROFILE"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="false"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:fontFamily="@font/antic"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+</LinearLayout>

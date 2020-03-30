@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ApplyForST">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#21327E">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            tools:src="@tools:sample/avatars"
+            android:clickable="true"
+            tools:srcCompat="?attr/homeAsUpIndicator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply For Studnt Tutor"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:visibility="gone"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="70dp"
+        android:layout_marginHorizontal="10dp">
+
+        <Button
+            android:id="@+id/eligibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eligibility: Minimum 60 credit completed and minimum CGPA 3.50 out of 4.0"
+            android:textColor="#240202"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent" />
+
+        <TableLayout
+            android:id="@+id/consultation_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/credit_completed"
+                    style="@style/MyEditTextStyle"
+                    android:hint="Total credit completed*"
+                    android:inputType="number|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/cgpa"
+                    style="@style/MyEditTextStyle"
+                    android:hint="Current cgpa*"
+                    android:inputType="number|numberDecimal" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/number_of_course"
+                    style="@style/MyEditTextStyle"
+                    android:hint="Running course*"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/total_class_hour"
+                    style="@style/MyEditTextStyle"
+                    android:hint="Total class hour*"
+                    android:inputType="number|numberDecimal" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/cse110_grade"
+                    style="@style/MyEditTextStyle"
+                    android:hint="CSE110 grade*"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/cse111_grade"
+                    style="@style/MyEditTextStyle"
+                    android:inputType="text"
+                    android:hint="CSE111 grade*" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/cse220_grade"
+                    style="@style/MyEditTextStyle"
+                    android:inputType="text"
+                    android:hint="CSE220 grade*" />
+
+                <EditText
+                    android:id="@+id/cse221_grade"
+                    style="@style/MyEditTextStyle"
+                    android:inputType="text"
+                    android:hint="CSE221 grade*" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/cse230_grade"
+                    style="@style/MyEditTextStyle"
+                    android:inputType="text"
+                    android:hint="CSE230 grade" />
+
+                <EditText
+                    android:id="@+id/cse260_grade"
+                    style="@style/MyEditTextStyle"
+                    android:inputType="text"
+                    android:hint="CSE260 grade*" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/cse250_grade"
+                    style="@style/MyEditTextStyle"
+                    android:inputType="text"
+                    android:hint="CSE250 grade" />
+
+                <EditText
+                    android:id="@+id/cse251_grade"
+                    style="@style/MyEditTextStyle"
+                    android:inputType="text"
+                    android:hint="CSE251 grade*" />
+            </TableRow>
+
+            <EditText
+                android:id="@+id/st_experience"
+                style="@style/MyEditTextStyle"
+                android:inputType="text"
+                android:hint="Previous ST Experience? Which course?" />
+
+            <EditText
+                android:id="@+id/other_experience"
+                style="@style/MyEditTextStyle"
+                android:inputType="text"
+                android:hint="Other activities or experience?" />
+
+            <EditText
+                android:id="@+id/scholarship"
+                style="@style/MyEditTextStyle"
+                android:inputType="text"
+                android:hint="Scholarship? If yes, which catagory?" />
+        </TableLayout>
+
+        <Button
+            android:id="@+id/apply_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

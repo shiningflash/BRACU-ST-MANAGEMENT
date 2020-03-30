@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="38dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:src="@drawable/bracu_logo"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/bangers"
+            android:gravity="start"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="12dp"
+            android:text="HELLO THERE, WELCOME BACK . ."
+            android:textColor="#413434"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <Button
+            android:id="@+id/appLebel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In to continue"
+            android:fontFamily="@font/antic"
+            android:textColor="#240202"
+            android:layout_marginStart="8dp"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:gravity="start|center"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:id="@+id/email_id"
+            style="@style/MyEditTextStyle"
+            android:hint="Enter email"
+            android:fontFamily="@font/antic"
+            android:textStyle="bold"
+            android:selectAllOnFocus="true"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/MyEditTextStyle"
+            android:hint="Enter password"
+            android:fontFamily="@font/antic"
+            android:textStyle="bold"
+            android:selectAllOnFocus="true"
+            android:layout_marginTop="2dp"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:fontFamily="@font/antic"
+                android:text="Show Password"/>
+
+            <Button
+                android:id="@+id/forgot_password_button"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:text="FORGOT PASSWORD?"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textColor="#AF392B"
+                android:gravity="end|center"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:text="LOGIN"
+            android:fontFamily="@font/antic"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/login_button"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW USER? SIGN UP"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/antic"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#2196F3"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+</LinearLayout>

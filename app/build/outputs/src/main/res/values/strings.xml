@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BRACU-ST-MANAGEMENT</string>
+
+    <string-array name="department_name">
+        <item>Computer Science and Engineering</item>
+        <item>Electric and Electrical Engeering</item>
+        <item>Mathematics and Natural Sciences</item>
+        <item>Pharmacy</item>
+    </string-array>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <string name="department_name">Department name</string>
+</resources>
