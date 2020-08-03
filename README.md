@@ -35,3 +35,9 @@ Future plan
 * want to involve teachers here
 * I am also interested to work with university authority if they like it and I am ready to implement all required features
 
+---------------------------------------
+## License & copyright
+
+© Amirul Islam, Competitive Programmer
+
+Licensed under [MIT License](LICENSE)
